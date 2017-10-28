@@ -11,6 +11,8 @@ public class ObstacleGenerator : MonoBehaviour {
     public float distanceBetweenMin;
     public float distanceBetweenMax;
 
+    public ObjectPooler theObjectPool;
+
     // Use this for initialization
     void Start()
     {
@@ -29,7 +31,13 @@ public class ObstacleGenerator : MonoBehaviour {
             transform.position = new Vector3(transform.position.x + distanceBetween,
                 transform.position.y, transform.position.z);
 
-            Instantiate(theObstacle, transform.position, transform.rotation);
+            //Instantiate(theObstacle, transform.position, transform.rotation);
+
+            GameObject newPlatform = theObjectPool.GetPooledObject();
+
+            newPlatform.transform.position = transform.position;
+            newPlatform.transform.rotation = transform.rotation;
+            newPlatform.SetActive(true);
         }
 
     }

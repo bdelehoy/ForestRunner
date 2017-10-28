@@ -11,6 +11,8 @@ public class PlatformGenerator : MonoBehaviour {
 
     private float platformWidth;
 
+    public ObjectPooler theObjectPool;
+
 	// Use this for initialization
 	void Start () {
         platformWidth = thePlatform.GetComponent<BoxCollider2D>().size.x;
@@ -24,7 +26,14 @@ public class PlatformGenerator : MonoBehaviour {
             transform.position = new Vector3(transform.position.x + platformWidth + distanceBetween,
                 transform.position.y, transform.position.z);
 
-            Instantiate(thePlatform, transform.position, transform.rotation);
+            //Instantiate(thePlatform, transform.position, transform.rotation);
+
+            GameObject newPlatform = theObjectPool.GetPooledObject();
+
+            newPlatform.transform.position = transform.position;
+            newPlatform.transform.rotation = transform.rotation;
+            newPlatform.SetActive(true);
+
         }
 		
 	}
