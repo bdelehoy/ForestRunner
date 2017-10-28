@@ -31,8 +31,6 @@ public class ObstacleGenerator : MonoBehaviour {
             transform.position = new Vector3(transform.position.x + distanceBetween,
                 transform.position.y, transform.position.z);
 
-            //Instantiate(theObstacle, transform.position, transform.rotation);
-
             GameObject newPlatform = theObjectPool.GetPooledObject();
 
             newPlatform.transform.position = transform.position;

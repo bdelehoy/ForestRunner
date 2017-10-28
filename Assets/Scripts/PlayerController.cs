@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
 
         grounded = Physics2D.IsTouchingLayers(playerCollider, whatIsFloor);
 
-        if(transform.position.x > speedMilestoneCount && moveSpeed < 25)
+        if(transform.position.x > speedMilestoneCount && moveSpeed < 20)
         {
             speedMilestoneCount += speedIncreaseMilestone;
 
