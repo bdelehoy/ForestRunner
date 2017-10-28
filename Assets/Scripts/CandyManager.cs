@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreManager : MonoBehaviour {
+public class CandyManager : MonoBehaviour {
 
 	public static int score= 0;
 	Text scoreThing;
@@ -12,9 +12,9 @@ public class ScoreManager : MonoBehaviour {
 		scoreThing = GetComponent<Text> ();
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		scoreThing.text = string.Format ("Distance: {0}", score);
+		scoreThing.text = string.Format ("Candy: {0}", score);
 	}
 }
