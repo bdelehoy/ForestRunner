@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
 
     public float speedMultiplier;
     public float speedIncreaseMilestone;
-    private float speedmilestoneCount;
+    private float speedMilestoneCount;
 
     public float jumpForce;
 
@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
 
     public bool grounded;
     public LayerMask whatIsFloor;
+    public LayerMask whatIsObstacle;
 
     private Collider2D playerCollider;
 
@@ -32,9 +33,9 @@ public class PlayerController : MonoBehaviour {
 
         grounded = Physics2D.IsTouchingLayers(playerCollider, whatIsFloor);
 
-        if(transform.position.x > speedmilestoneCount && moveSpeed < 25)
+        if(transform.position.x > speedMilestoneCount && moveSpeed < 25)
         {
-            speedmilestoneCount += speedIncreaseMilestone;
+            speedMilestoneCount += speedIncreaseMilestone;
 
             moveSpeed = moveSpeed * speedMultiplier;
             
@@ -46,5 +47,10 @@ public class PlayerController : MonoBehaviour {
         {
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
         }
-	}
+
+        if(Physics2D.IsTouchingLayers(playerCollider, whatIsObstacle) != true)
+        {
+            ScoreManager.score += 3;
+        }
+    }
 }
