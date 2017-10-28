@@ -834,8 +834,8 @@ MonoBehaviour:
   theObstacle: {fileID: 1843127700}
   generationPoint: {fileID: 973623420}
   distanceBetween: 0
-  distanceBetweenMin: 10
-  distanceBetweenMax: 25
+  distanceBetweenMin: 15
+  distanceBetweenMax: 30
   theObjectPool: {fileID: 404495128}
 --- !u!4 &1556035956
 Transform:
