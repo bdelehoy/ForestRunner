@@ -5,6 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float moveSpeed;
+
+    public float speedMultiplier;
+    public float speedIncreaseMilestone;
+    private float speedmilestoneCount;
+
     public float jumpForce;
 
     private Rigidbody2D playerRB;
@@ -26,6 +31,14 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 
         grounded = Physics2D.IsTouchingLayers(playerCollider, whatIsFloor);
+
+        if(transform.position.x > speedmilestoneCount && moveSpeed < 25)
+        {
+            speedmilestoneCount += speedIncreaseMilestone;
+
+            moveSpeed = moveSpeed * speedMultiplier;
+            
+        }
 
         playerRB.velocity = new Vector2(moveSpeed, playerRB.velocity.y);
 
