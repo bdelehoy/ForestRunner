@@ -102,7 +102,7 @@ MonoBehaviour:
   moveSpeed: 7.5
   speedMultiplier: 1.02
   speedIncreaseMilestone: 20
-  jumpForce: 20
+  jumpForce: 25
   grounded: 0
   whatIsFloor:
     serializedVersion: 2
