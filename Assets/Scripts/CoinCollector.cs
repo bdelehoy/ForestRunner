@@ -17,4 +17,5 @@ public class CoinCollector : MonoBehaviour {
 				ScoreManager.score++;
 				Destroy (gameObject);
 			}
+	}
 }

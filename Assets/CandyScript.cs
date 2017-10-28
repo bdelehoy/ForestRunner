@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreManager : MonoBehaviour {
+public class CandyScript : MonoBehaviour {
 
-	public static int score= 0;
-	Text scoreThing;
 	// Use this for initialization
 	void Start () {
-		scoreThing = GetComponent<Text> ();
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		scoreThing.text = string.Format ("Score: {0}", score);
+	}
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == "Player") {
+			ScoreManager.score++;
+			Destroy (gameObject);
+		}
 	}
 }
