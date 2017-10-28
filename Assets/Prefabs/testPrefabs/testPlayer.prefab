@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa58fc5b75ef13d489666d37e68d03d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7.5
+  moveSpeed: 10
   jumpForce: 20
   grounded: 0
   whatIsFloor:
