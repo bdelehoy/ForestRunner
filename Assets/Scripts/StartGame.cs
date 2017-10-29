@@ -1,11 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 using UnityEngine;
 
 public class StartGame : MonoBehaviour {
-    public void LoadIndex()
+
+    public FadeToBlack objectToFade;
+
+    public void LoadIndex(int index)
     {
-        SceneManager.LoadScene(1);    
+        StartCoroutine(loadScene(index));
+    }
+
+    IEnumerator loadScene(int index)
+    {
+        yield return StartCoroutine(objectToFade.Fade());
+        SceneManager.LoadScene(index);
+
     }
 }
