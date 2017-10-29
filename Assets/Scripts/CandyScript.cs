@@ -17,8 +17,9 @@ public class CandyScript : MonoBehaviour {
 		if (other.tag == "Player") {
 			ScoreManager.score += 250;
 			CandyManager.score++;
-            gameObject.SetActive(false);
+			gameObject.SetActive (false);
 		}
-		
+			
 	}
+
 }
