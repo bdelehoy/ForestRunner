@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CandyScript : MonoBehaviour {
 
+	//public AudioClip munch;
 	// Use this for initialization
 	void Start () {
 	}
@@ -17,10 +18,21 @@ public class CandyScript : MonoBehaviour {
 		if (other.tag == "Player") {
 			ScoreManager.score += 250;
 			CandyManager.score++;
-			GetComponent<AudioSource> ().Play();
-			gameObject.SetActive (false);
+			//AudioSource.PlayClipAtPoint(munch, transform.position);
+			//Resources.Load<AudioClip>("munch");
+			//gameObject.SetActive (false);
+			StartCoroutine(playAudio());
 		}
 			
+	}
+
+	IEnumerator playAudio() {
+		GetComponent<AudioSource>().Play();
+		gameObject.GetComponent<SpriteRenderer>().enabled = false;
+		yield return new WaitForSeconds (gameObject.GetComponent<AudioSource> ().clip.length);
+		gameObject.GetComponent<SpriteRenderer>().enabled = true;
+		gameObject.SetActive (false);
+
 	}
 
 }
