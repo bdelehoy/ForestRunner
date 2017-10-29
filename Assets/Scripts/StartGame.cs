@@ -16,8 +16,8 @@ public class StartGame : MonoBehaviour {
 
     IEnumerator loadScene(int index)
     {
-        yield return StartCoroutine(objectToFade.Fade());
-        yield return StartCoroutine(musicToFade.FadeM());
+        yield return StartCoroutine(objectToFade.Fade(true));
+        yield return StartCoroutine(musicToFade.FadeM(true));
         SceneManager.LoadScene(index);
     }
 }

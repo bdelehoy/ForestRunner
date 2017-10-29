@@ -10,17 +10,28 @@ public class FadeAudio : MonoBehaviour {
         music = GetComponent<AudioSource>();
 	}
 
-    public void FadeMusic()
+    public void FadeMusic(bool fadeDirection)
     {
-        StartCoroutine(FadeM());
+        StartCoroutine(FadeM(fadeDirection));
     }
 
-	public IEnumerator FadeM()
+	public IEnumerator FadeM(bool fadeDirection)
     {
-        for (float i = 1; i >= 0; i -= 0.01f)
+        if (fadeDirection)
         {
-            music.volume = i;
-            yield return new WaitForSeconds(Time.deltaTime);
+            for (float i = 1; i >= 0; i -= 0.01f)
+            {
+                music.volume = i;
+                yield return new WaitForSeconds(Time.deltaTime);
+            }
+        }
+        else
+        {
+            for (float i = 1; i <= 1; i += 0.01f)
+            {
+                music.volume = i;
+                yield return new WaitForSeconds(Time.deltaTime);
+            }
         }
     }
 
