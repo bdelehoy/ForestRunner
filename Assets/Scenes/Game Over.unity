@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 405964783}
   - component: {fileID: 405964782}
   - component: {fileID: 405964781}
+  - component: {fileID: 405964784}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -390,13 +391,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 102900000, guid: eeaeff386e1cd8849bc5aa1bc5aed6c2, type: 3}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 405964784}
+        m_MethodName: LoadIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -436,6 +437,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 405964779}
+--- !u!114 &405964784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405964779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a355994905de4fa4faddb37108c4e289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToFade: {fileID: 0}
+  musicToFade: {fileID: 0}
 --- !u!1 &773817021
 GameObject:
   m_ObjectHideFlags: 0
