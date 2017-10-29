@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class FadeAudio : MonoBehaviour {
 
+    AudioSource music;
 
-
-	// Use this for initialization
 	void Start () {
-		
+        music = GetComponent<AudioSource>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    public void FadeMusic()
+    {
+        StartCoroutine(FadeM());
+    }
+
+	public IEnumerator FadeM()
+    {
+        for (float i = 1; i >= 0; i -= 0.01f)
+        {
+            music.volume = i;
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+    }
+
 }
