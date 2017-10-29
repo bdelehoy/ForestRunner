@@ -475,7 +475,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 554174698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 309.8, y: 181.4, z: 0}
+  m_LocalPosition: {x: 295.3, y: 181.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2135595960}
@@ -920,7 +920,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 938499937
+  randomSeed: -8649723
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4366,7 +4366,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4303392393075906, guid: e41ac71e6b89e2948ace33b388971cad, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.34
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4303392393075906, guid: e41ac71e6b89e2948ace33b388971cad, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4394,15 +4394,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4303392393075906, guid: e41ac71e6b89e2948ace33b388971cad, type: 2}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4303392393075906, guid: e41ac71e6b89e2948ace33b388971cad, type: 2}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4303392393075906, guid: e41ac71e6b89e2948ace33b388971cad, type: 2}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 212112078008676650, guid: e41ac71e6b89e2948ace33b388971cad,
         type: 2}
@@ -4422,6 +4422,11 @@ Prefab:
     - target: {fileID: 4303392393075906, guid: e41ac71e6b89e2948ace33b388971cad, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -181.83398
+      objectReference: {fileID: 0}
+    - target: {fileID: 212112078008676650, guid: e41ac71e6b89e2948ace33b388971cad,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e41ac71e6b89e2948ace33b388971cad, type: 2}
@@ -4827,7 +4832,7 @@ Animator:
   m_GameObject: {fileID: 1733005867}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 90c925d247b40d1438944c590d6a755d, type: 2}
+  m_Controller: {fileID: 9100000, guid: d1c6a0c235a0545b691b62a521f29dbb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4852,7 +4857,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.94, y: 0.95}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4940,7 +4945,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: d2ccd4e579180e042943ba93f7200bdf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 322b1a64a01357549a731f854ae45e08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5505,10 +5510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3902660ee38793e40a26d635bde976ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thePlayer: {fileID: 114256600920987864, guid: cea937e1e11625148852f2d39066cf37,
-    type: 2}
-  lastPlayerPosition: {x: 0, y: 0, z: 0}
-  distanceToMove: 0
 --- !u!1 &2135595956
 GameObject:
   m_ObjectHideFlags: 0
@@ -5591,7 +5592,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2135595956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 426.5, y: 220.5, z: 0}
+  m_LocalPosition: {x: 412, y: 157, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 554174699}
