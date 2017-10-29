@@ -17,6 +17,7 @@ public class CandyScript : MonoBehaviour {
 		if (other.tag == "Player") {
 			ScoreManager.score += 250;
 			CandyManager.score++;
+			GetComponent<AudioSource> ().Play();
 			gameObject.SetActive (false);
 		}
 			
