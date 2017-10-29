@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114075172476869366}
   - component: {fileID: 58882630485007390}
   - component: {fileID: 114617346125620222}
-  - component: {fileID: 82581650723756344}
+  - component: {fileID: 82400665185195116}
   m_Layer: 11
   m_Name: Candy
   m_TagString: Untagged
@@ -59,7 +59,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.2
---- !u!82 &82581650723756344
+--- !u!82 &82400665185195116
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -69,16 +69,16 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3a02a1f8c55818440a71b612868cb761, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 0
+  Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.37658978
+  MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
