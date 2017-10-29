@@ -12,20 +12,33 @@ public class FadeToBlack : MonoBehaviour {
         black = GetComponent<Image>();
     }
 
-    public void FadeOut()
+    public void FadeOut(bool fadeDirection)
     {
-        StartCoroutine(Fade());
+        StartCoroutine(Fade(fadeDirection));
     }
 
-    public IEnumerator Fade()
+    public IEnumerator Fade(bool fadeDirection)
     {
-
-        for (float i = 0; i <= 1; i += 0.01f)
+        if (fadeDirection)
         {
-            black.color = new Color(1, 1, 1, i);
-            yield return new WaitForSeconds(Time.deltaTime);
 
+            for (float i = 0; i <= 1; i += 0.01f)
+            {
+                black.color = new Color(1, 1, 1, i);
+                yield return new WaitForSeconds(Time.deltaTime);
+
+            }
         }
+        else
+        {
+            for (float i = 1; i >= 0; i -= 0.01f)
+            {
+                black.color = new Color(1, 1, 1, i);
+                yield return new WaitForSeconds(Time.deltaTime);
+
+            }
+        }
+
     }
 
 }
