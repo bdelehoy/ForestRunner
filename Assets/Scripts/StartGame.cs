@@ -7,6 +7,7 @@ using UnityEngine;
 public class StartGame : MonoBehaviour {
 
     public FadeToBlack objectToFade;
+    public FadeAudio musicToFade;
 
     public void LoadIndex(int index)
     {
@@ -16,7 +17,7 @@ public class StartGame : MonoBehaviour {
     IEnumerator loadScene(int index)
     {
         yield return StartCoroutine(objectToFade.Fade());
+        yield return StartCoroutine(musicToFade.FadeM());
         SceneManager.LoadScene(index);
-
     }
 }
