@@ -19,7 +19,7 @@ public class FadeAudio : MonoBehaviour {
     {
         if (fadeDirection)
         {
-            for (float i = 1; i >= 0; i -= 0.05f)
+            for (float i = 1; i >= 0; i -= 0.015f)
             {
                 music.volume = i;
                 yield return new WaitForSeconds(Time.deltaTime);
@@ -27,7 +27,7 @@ public class FadeAudio : MonoBehaviour {
         }
         else
         {
-            for (float i = 1; i <= 1; i += 0.05f)
+            for (float i = 1; i <= 1; i += 0.015f)
             {
                 music.volume = i;
                 yield return new WaitForSeconds(Time.deltaTime);

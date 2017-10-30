@@ -13,6 +13,7 @@ namespace UnityStandardAssets._2D
             if (other.tag == "Player")
             {
                 SceneManager.LoadScene(2);
+                ScoreManager.score = 0;
             }
         }
     }

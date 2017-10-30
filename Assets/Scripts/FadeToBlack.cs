@@ -22,7 +22,7 @@ public class FadeToBlack : MonoBehaviour {
         if (fadeDirection)
         {
 
-            for (float i = 0; i <= 1; i += 0.04f)
+            for (float i = 0; i <= 1; i += 0.02f)
             {
                 black.color = new Color(1, 1, 1, i);
                 yield return new WaitForSeconds(Time.deltaTime);
@@ -31,7 +31,7 @@ public class FadeToBlack : MonoBehaviour {
         }
         else
         {
-            for (float i = 1; i >= 0; i -= 0.04f)
+            for (float i = 1; i >= 0; i -= 0.02f)
             {
                 black.color = new Color(1, 1, 1, i);
                 yield return new WaitForSeconds(Time.deltaTime);
