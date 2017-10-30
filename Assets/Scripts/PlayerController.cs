@@ -68,6 +68,11 @@ public class PlayerController : MonoBehaviour {
                 Invoke("resetInvulnerability", 2);
             }
         }
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            collision.gameObject.SetActive(false);
+        }
+
     }
 
     void resetInvulnerability()

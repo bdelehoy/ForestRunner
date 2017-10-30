@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4693354290027920}
   - component: {fileID: 61622785535684790}
   - component: {fileID: 114929310861479594}
+  - component: {fileID: 114243526345915966}
   m_Layer: 10
   m_Name: FallenStumpObstacle
   m_TagString: Obstacle
@@ -81,7 +82,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 7e0c73efd50acd541bd1ab06d03fd50a, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.030637592, y: -0.13907862}
@@ -97,6 +98,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.70127517, y: 0.68647003}
   m_EdgeRadius: 0
+--- !u!114 &114243526345915966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1772971595680500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acaf746bd9b09f94784b5dc63f72f120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114325809903949190
 MonoBehaviour:
   m_ObjectHideFlags: 1

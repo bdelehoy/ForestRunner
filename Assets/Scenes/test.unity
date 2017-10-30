@@ -4909,6 +4909,11 @@ Prefab:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 61830971412777506, guid: e6806798a28a5704d8ed389c4a34b16a,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6806798a28a5704d8ed389c4a34b16a, type: 2}
   m_IsPrefabParent: 0
@@ -5891,6 +5896,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 0}
+  objectToFade: {fileID: 0}
+  musicToFade: {fileID: 0}
 --- !u!199 &1438666145
 ParticleSystemRenderer:
   serializedVersion: 4
@@ -6005,7 +6012,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1517553140
+  randomSeed: -686766857
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -39,7 +39,8 @@ public class CameraController : MonoBehaviour {
 
         if (LivesManager.lives == 0)
         {
-                SceneManager.LoadScene(2);
+            SceneManager.LoadScene(2);
+            LivesManager.lives = 3;
         }
 	}
 }
