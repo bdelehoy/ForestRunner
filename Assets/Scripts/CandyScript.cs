@@ -16,7 +16,6 @@ public class CandyScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player") {
-			ScoreManager.score += 250;
 			CandyManager.score++;
 			//AudioSource.PlayClipAtPoint(munch, transform.position);
 			//Resources.Load<AudioClip>("munch");
