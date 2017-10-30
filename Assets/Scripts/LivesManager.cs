@@ -15,6 +15,6 @@ public class LivesManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		livesLeft.text = string.Format ("x {3}", lives);
+		livesLeft.text = string.Format ("x {0}", lives);
 	}
 }
