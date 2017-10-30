@@ -21,15 +21,36 @@ public class PlayerController : MonoBehaviour {
 
     private Collider2D playerCollider;
 
+    public bool isKnockedBack = false;
+
 	// Use this for initialization
 	void Start () {
         playerRB = GetComponent<Rigidbody2D>();
 
         playerCollider = GetComponent<Collider2D>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            isKnockedBack = true;
+            StartCoroutine(KnockBack(other));
+        }
+    }
+
+    IEnumerator KnockBack(Collider2D other)
+    {
+        GetComponent<AudioSource>().Play();
+        other.attachedRigidbody.AddForce(new Vector2(-0.005f, 0f));
+        yield return new WaitForSeconds(Time.deltaTime);
+        isKnockedBack = false;
+    }
+        
+
+    // Update is called once per frame
+    void Update () {
+
 
         grounded = Physics2D.IsTouchingLayers(playerCollider, whatIsFloor);
 
@@ -38,10 +59,13 @@ public class PlayerController : MonoBehaviour {
             speedMilestoneCount += speedIncreaseMilestone;
 
             moveSpeed = moveSpeed * speedMultiplier;
-            
         }
 
-        playerRB.velocity = new Vector2(moveSpeed, playerRB.velocity.y);
+
+        if (!isKnockedBack)
+        {
+            playerRB.velocity = new Vector2(moveSpeed, playerRB.velocity.y);
+        }
 
         if((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && grounded == true)
         {
@@ -51,6 +75,8 @@ public class PlayerController : MonoBehaviour {
         if(Physics2D.IsTouchingLayers(playerCollider, whatIsObstacle) != true)
         {
             ScoreManager.score = (int)(((int)transform.position.x + 9) * 4);
-        } 
+        }
     }
+
+   
 }

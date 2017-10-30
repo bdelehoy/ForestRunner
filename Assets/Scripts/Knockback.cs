@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Knockback : MonoBehaviour {
 
-    private void OnCollisionEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
             GetComponent<AudioSource>().Play();
+            
+            other.attachedRigidbody.AddForce(new Vector2(-100000f, 0f));
         }
     }
 }
