@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 3315f75ea689ffa4c9b8bd352f61b934
-timeCreated: 1509326755
+guid: f10655bddb0ba594793f7866266ed00a
+timeCreated: 1509252975
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: horsemanrun1_0
-    21300002: horsemanrun1_1
-    21300004: horsemanrun1_2
-    21300006: horsemanrun1_3
-    21300008: horsemanrun1_4
-    21300010: horsemanrun1_5
-    21300012: horsemanrun1_6
-    21300014: horsemanrun1_7
-    21300016: horsemanrun1_8
-    21300018: horsemanrun1_9
-    21300020: horsemanrun1_10
-    21300022: horsemanrun1_11
-    21300024: horsemanrun1_12
-    21300026: horsemanrun1_13
-    21300028: horsemanrun1_14
-    21300030: horsemanrun1_15
+    21300000: Horseman Run_0
+    21300002: Horseman Run_1
+    21300004: Horseman Run_2
+    21300006: Horseman Run_3
+    21300008: Horseman Run_4
+    21300010: Horseman Run_5
+    21300012: Horseman Run_6
+    21300014: Horseman Run_7
+    21300016: Horseman Run_8
+    21300018: Horseman Run_9
+    21300020: Horseman Run_10
+    21300022: Horseman Run_11
+    21300024: Horseman Run_12
+    21300026: Horseman Run_13
+    21300028: Horseman Run_14
+    21300030: Horseman Run_15
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -90,11 +90,29 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: horsemanrun1_0
+      name: Horseman Run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -108,7 +126,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_1
+      name: Horseman Run_1
       rect:
         serializedVersion: 2
         x: 128
@@ -122,7 +140,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_2
+      name: Horseman Run_2
       rect:
         serializedVersion: 2
         x: 256
@@ -136,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_3
+      name: Horseman Run_3
       rect:
         serializedVersion: 2
         x: 384
@@ -150,7 +168,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_4
+      name: Horseman Run_4
       rect:
         serializedVersion: 2
         x: 0
@@ -164,7 +182,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_5
+      name: Horseman Run_5
       rect:
         serializedVersion: 2
         x: 128
@@ -178,7 +196,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_6
+      name: Horseman Run_6
       rect:
         serializedVersion: 2
         x: 256
@@ -192,7 +210,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_7
+      name: Horseman Run_7
       rect:
         serializedVersion: 2
         x: 384
@@ -206,7 +224,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_8
+      name: Horseman Run_8
       rect:
         serializedVersion: 2
         x: 0
@@ -220,7 +238,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_9
+      name: Horseman Run_9
       rect:
         serializedVersion: 2
         x: 128
@@ -234,7 +252,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_10
+      name: Horseman Run_10
       rect:
         serializedVersion: 2
         x: 256
@@ -248,7 +266,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_11
+      name: Horseman Run_11
       rect:
         serializedVersion: 2
         x: 384
@@ -262,7 +280,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_12
+      name: Horseman Run_12
       rect:
         serializedVersion: 2
         x: 0
@@ -276,7 +294,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_13
+      name: Horseman Run_13
       rect:
         serializedVersion: 2
         x: 128
@@ -290,7 +308,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_14
+      name: Horseman Run_14
       rect:
         serializedVersion: 2
         x: 256
@@ -304,7 +322,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: horsemanrun1_15
+      name: Horseman Run_15
       rect:
         serializedVersion: 2
         x: 384

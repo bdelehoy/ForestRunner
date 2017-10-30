@@ -9,7 +9,8 @@ public class CameraController : MonoBehaviour {
     private Vector3 lastPlayerPosition;
     private float distanceToMove;
 
-    AudioSource music;
+    public AudioSource music;
+
 
 	// Use this for initialization
 	void Start () {

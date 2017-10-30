@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1304859208925558}
+  m_RootGameObject: {fileID: 1073817079495352}
   m_IsPrefabParent: 1
---- !u!1 &1304859208925558
+--- !u!1 &1073817079495352
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4714185252154518}
-  - component: {fileID: 114731364020695066}
+  - component: {fileID: 4587872716554978}
+  - component: {fileID: 114344737240148864}
   m_Layer: 0
   m_Name: Witchhut
   m_TagString: Untagged
@@ -27,15 +27,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1738393649684910
+--- !u!1 &1826053088993642
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4544049664780394}
-  - component: {fileID: 212457491565464634}
+  - component: {fileID: 4523299435581260}
+  - component: {fileID: 212481138309522600}
   m_Layer: 0
   m_Name: witchhutnight
   m_TagString: Untagged
@@ -43,51 +43,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4544049664780394
+--- !u!4 &4523299435581260
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1738393649684910}
+  m_GameObject: {fileID: 1826053088993642}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.69, y: 1.46, z: 0}
+  m_LocalPosition: {x: 1.69, y: 1.51, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
-  m_Father: {fileID: 4714185252154518}
+  m_Father: {fileID: 4587872716554978}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4714185252154518
+--- !u!4 &4587872716554978
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1304859208925558}
+  m_GameObject: {fileID: 1073817079495352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.095653, y: -10.35, z: 0}
+  m_LocalPosition: {x: -5.29, y: 2.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4544049664780394}
+  - {fileID: 4523299435581260}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114731364020695066
+--- !u!114 &114344737240148864
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1304859208925558}
+  m_GameObject: {fileID: 1073817079495352}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e0fd3eec72f5694791ae3a6b79db706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   platformDestructionPoint: {fileID: 0}
---- !u!212 &212457491565464634
+--- !u!212 &212481138309522600
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1738393649684910}
+  m_GameObject: {fileID: 1826053088993642}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

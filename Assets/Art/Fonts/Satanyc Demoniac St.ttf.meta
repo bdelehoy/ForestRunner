@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4ea1e1c600ff24a65945609bd012819e
+timeCreated: 1509320894
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Satanyc Demoniac St
+  fontNames:
+  - Satanyc Demoniac St
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
