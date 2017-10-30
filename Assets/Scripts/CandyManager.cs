@@ -12,7 +12,7 @@ public class CandyManager : MonoBehaviour {
 		scoreThing = GetComponent<Text> ();
 
 	}
-
+	//cooment
 	// Update is called once per frame
 	void Update () {
 		scoreThing.text = string.Format ("Candy: {0}", score);
