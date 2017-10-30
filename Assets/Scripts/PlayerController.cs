@@ -20,9 +20,11 @@ public class PlayerController : MonoBehaviour {
     public LayerMask whatIsObstacle;
 
     private Collider2D playerCollider;
+    public int playerHealth;
+    private bool invincible = false;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         playerRB = GetComponent<Rigidbody2D>();
 
         playerCollider = GetComponent<Collider2D>();
@@ -48,9 +50,31 @@ public class PlayerController : MonoBehaviour {
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
         }
 
-        if(Physics2D.IsTouchingLayers(playerCollider, whatIsObstacle) != true)
+        /*
+        if(Physics2D.IsTouchingLayers(playerCollider, whatIsObstacle) == true)
         {
-            ScoreManager.score = (int)(((int)transform.position.x + 9) * 4);
+            playerHealth--;
         }
+        */
+
+
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!invincible)
+        {
+            if (collision.gameObject.tag == "Obstacle")
+            {
+                invincible = true;
+                playerHealth -= 1;
+                Invoke("resetInvulnerability", 2);
+            }
+        }
+    }
+
+    void resetInvulnerability()
+    {
+        invincible = false;
     }
 }
