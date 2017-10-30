@@ -51,6 +51,6 @@ public class PlayerController : MonoBehaviour {
         if(Physics2D.IsTouchingLayers(playerCollider, whatIsObstacle) != true)
         {
             ScoreManager.score = (int)(((int)transform.position.x + 9) * 4);
-        }
+        } 
     }
 }
