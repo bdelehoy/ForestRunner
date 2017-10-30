@@ -1533,7 +1533,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1144004231
+  randomSeed: -1047245466
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4807,7 +4807,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.28, y: 1.28}
-    newSize: {x: 0.64, y: 0.64}
+    newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4889,7 +4889,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.28, y: 1.28}
-    newSize: {x: 0.64, y: 0.64}
+    newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6273,23 +6273,28 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f10655bddb0ba594793f7866266ed00a,
+      objectReference: {fileID: 21300000, guid: 3315f75ea689ffa4c9b8bd352f61b934,
         type: 3}
     - target: {fileID: 212112078008676650, guid: e41ac71e6b89e2948ace33b388971cad,
         type: 2}
       propertyPath: m_Size.x
-      value: 0.64
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 212112078008676650, guid: e41ac71e6b89e2948ace33b388971cad,
         type: 2}
       propertyPath: m_Size.y
-      value: 0.64
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 212112078008676650, guid: e41ac71e6b89e2948ace33b388971cad,
         type: 2}
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 95422440607875306, guid: e41ac71e6b89e2948ace33b388971cad,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 257b32ad75ea23946bc335bf03c823cb, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e41ac71e6b89e2948ace33b388971cad, type: 2}
   m_IsPrefabParent: 0
