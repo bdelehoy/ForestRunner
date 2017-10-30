@@ -50,12 +50,9 @@ public class PlayerController : MonoBehaviour {
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
         }
 
-        /*
-        if(Physics2D.IsTouchingLayers(playerCollider, whatIsObstacle) == true)
-        {
-            playerHealth--;
-        }
-        */
+        ScoreManager.score = (int)((int)(transform.position.x + 9) * 4);
+ 
+        
 
 
     }
@@ -67,7 +64,7 @@ public class PlayerController : MonoBehaviour {
             if (collision.gameObject.tag == "Obstacle")
             {
                 invincible = true;
-                playerHealth -= 1;
+                LivesManager.lives--;
                 Invoke("resetInvulnerability", 2);
             }
         }

@@ -478,6 +478,36 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8622c395a78907d4e8431b3005de1a08, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &449646853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 449646854}
+  m_Layer: 0
+  m_Name: WitchhutObjectPools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &449646854
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 449646853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.1858387, y: 3.4383998, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1278020384}
+  - {fileID: 1915244916}
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &459326770
 Prefab:
   m_ObjectHideFlags: 0
@@ -5251,6 +5281,49 @@ Transform:
   m_PrefabParentObject: {fileID: 4131630302218574, guid: 8622c395a78907d4e8431b3005de1a08,
     type: 2}
   m_PrefabInternal: {fileID: 391515374}
+--- !u!1 &1278020383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1278020384}
+  - component: {fileID: 1278020385}
+  m_Layer: 0
+  m_Name: ObstacleObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278020384
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1278020383}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.793867, y: 1.2717414, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 449646854}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1278020385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1278020383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8ab399bc40f67429d5eaf8324b1427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObject: {fileID: 1209949631945180, guid: c14e49e28db682e418dbab4e40f30462,
+    type: 2}
+  pooledAmount: 2
 --- !u!4 &1306412860 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4131630302218574, guid: 8622c395a78907d4e8431b3005de1a08,
@@ -5778,7 +5851,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1173581295
+  randomSeed: -1517553140
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -9105,6 +9178,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1535021378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1535021380}
+  - component: {fileID: 1535021379}
+  m_Layer: 0
+  m_Name: WitchhutGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1535021379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535021378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ff5ecc688bd494d88c16abba44d2bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theProp: {fileID: 0}
+  generationPoint: {fileID: 973623420}
+  distanceBetween: 0
+  distanceBetweenMin: 50
+  distanceBetweenMax: 100
+  theProps:
+  - {fileID: 1209949631945180, guid: c14e49e28db682e418dbab4e40f30462, type: 2}
+  - {fileID: 1094576759309472, guid: 980aa475aadf41640a37486cc7496d1b, type: 2}
+  theObjectPools:
+  - {fileID: 1278020385}
+  - {fileID: 1915244917}
+--- !u!4 &1535021380
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535021378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.18, y: 1.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1561373257 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4610220265840892, guid: fc03be509bb730e4ab8cf07ef2787dde,
@@ -9753,6 +9877,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25.787712, y: 0.77119625}
   m_EdgeRadius: 0
+--- !u!1 &1915244915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1915244916}
+  - component: {fileID: 1915244917}
+  m_Layer: 0
+  m_Name: ObstacleObjectPooler (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1915244916
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915244915}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.793867, y: 1.2717414, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 449646854}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1915244917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915244915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8ab399bc40f67429d5eaf8324b1427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObject: {fileID: 1094576759309472, guid: 980aa475aadf41640a37486cc7496d1b,
+    type: 2}
+  pooledAmount: 2
 --- !u!1 &1935035218
 GameObject:
   m_ObjectHideFlags: 0
