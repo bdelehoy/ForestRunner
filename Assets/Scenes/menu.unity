@@ -627,7 +627,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Credits:
 
-    Brandon Lehoy      Audio Designer
+    Brandon Delehoy    Audio Designer
 
     Justin Lee          Artist
 
@@ -880,7 +880,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1958625440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 412, y: 159.5, z: 0}
+  m_LocalPosition: {x: 460.5, y: 146, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 700781686}
